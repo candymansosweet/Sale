@@ -44,9 +44,11 @@ export class AppConfigService {
 
   private setConfig = (data: any): void => {
     this.config.api.hrm = data.api.hrm;
-    this.config.api.media = data.api.meida;
+    this.config.api.media = data.api.media;
     this.config.title = data.title;
     this.config.favicon = data.favicon;
+    console.log(this.config);
+    
   };
 
   getConfig = () => this.config;

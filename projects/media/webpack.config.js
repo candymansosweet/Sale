@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'media',
 
   exposes: {
-    './Component': './projects/media/src/app/app.component.ts',
+    './Module': './projects/media/src/remote-entry/remote-entry.module.ts',
   },
 
   shared: {
@@ -13,3 +13,4 @@ module.exports = withModuleFederationPlugin({
   },
 
 });
+
