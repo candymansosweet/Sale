@@ -1,0 +1,8 @@
+{
+  "title": "Minh Trang",
+  "favicon": "assets/images/favicon.ico",
+  "api": {
+    "hrm": "http://localhost:7300/remoteEntry.js",
+    "media": "http://localhost:7400/remoteEntry.js"
+  }
+}
