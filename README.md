@@ -18,6 +18,7 @@
 
 # Hướng dẫn chung
 ## Tạo mới 1 application 
+- npx ng generate application <tên dự án>
 - ng g @angular-architects/module-federation:init --project <tên dự án> --port <cổng> --type <kiểu dự án remote | host>
 - create remote-entry moudule:  
   + cd projects\<tên dự án>\src\app

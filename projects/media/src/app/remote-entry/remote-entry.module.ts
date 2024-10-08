@@ -5,8 +5,7 @@ import { RemoteEntryRoutingModule } from './remote-entry-routing.module';
 
 
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     RemoteEntryRoutingModule

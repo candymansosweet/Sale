@@ -10,7 +10,7 @@ module.exports = withModuleFederationPlugin({
   // Phần expose cho phép chia sẻ module của ứng dụng này với các ứng dụng khác
   exposes: {
     // Định nghĩa module được chia sẻ với tên './Module'
-    './Module': './projects/media/src/remote-entry/remote-entry.module.ts',
+    './Module': './projects/media/src/app/remote-entry/remote-entry.module.ts',
     // Tệp này sẽ được sử dụng bởi các ứng dụng khác để load module này
   },
 
