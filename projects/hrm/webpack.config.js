@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'hrm',
 
   exposes: {
-    './Component': './projects/hrm/src/app/app.component.ts',
+    './Module': './projects/hrm/src/app/remote-entry/remote-entry.module.ts',
   },
 
   shared: {

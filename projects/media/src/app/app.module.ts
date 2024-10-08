@@ -11,19 +11,8 @@ import { RouterModule } from '@angular/router';
     AppComponent
   ],
   imports: [
-    CommonModule,
+    BrowserModule,
     RemoteEntryModule,
-    RouterModule.forRoot(
-      [
-        {
-          path: '',
-          loadChildren: () =>
-            import('../remote-entry/remote-entry.module').then(
-              (m) => m.RemoteEntryModule
-            ),
-        },
-      ]
-    )
   ],
   providers: [],
   bootstrap: [AppComponent]

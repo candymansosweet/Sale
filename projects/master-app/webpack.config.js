@@ -4,6 +4,7 @@ module.exports = withModuleFederationPlugin({
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    "nop-lib": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
   },
 
 });

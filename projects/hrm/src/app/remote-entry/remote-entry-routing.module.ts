@@ -9,7 +9,7 @@ export const remoteRoutes: Routes = [
       {
         path: 'test',
         loadChildren: () =>
-          import('../app/test/test.module').then((m) => m.TestModule),
+          import('../components/permission/permission.module').then((m) => m.PermissionModule),
       },
     ]
   }
