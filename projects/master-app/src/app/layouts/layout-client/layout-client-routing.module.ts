@@ -9,31 +9,18 @@ const routes: Routes = [
     component: LayoutClientComponent,
     children: [
       {
-        path: 'hrm',
+        path: '',
         loadChildren: () => loadRemoteModule({
           type: 'manifest',
-          remoteName: 'hrm',
+          remoteName: 'client',
           exposedModule: './Module'
         })
           .then(m => m.RemoteEntryModule)
           .catch(err => {
-            console.error('Error loading HRM module', err);
+            console.error('Error loading Client module', err);
             return import('projects/master-app/src/app/components/error-page/error-page.module').then(m => m.ErrorPageModule);
           })
-      },
-      {
-        path: 'media',
-        loadChildren: () => loadRemoteModule({
-          type: 'manifest',
-          remoteName: 'media',
-          exposedModule: './Module'
-        })
-          .then(m => m.RemoteEntryModule)
-          .catch(err => {
-            console.error('Error loading Media module', err);
-            return import('projects/master-app/src/app/components/error-page/error-page.module').then(m => m.ErrorPageModule);
-          })
-      },
+      }
     ]
   }
 ];

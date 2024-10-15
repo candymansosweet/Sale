@@ -11,7 +11,7 @@ import { LayoutAdminComponent } from './layout-admin.component';
   ],
   imports: [
     CommonModule,
-    LayoutAdminRoutingModule
+    LayoutAdminRoutingModule,
   ]
 })
 export class LayoutAdminModule { }

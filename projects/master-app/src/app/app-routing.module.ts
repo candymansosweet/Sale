@@ -6,15 +6,25 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('../app/layouts/layout-client/layout-client.module').then(m => m.LayoutClientModule)
-  },
-  {
-    path: 'admin',
-    loadChildren: () => import('../app/layouts/layout-admin/layout-admin.module').then(m => m.LayoutAdminModule)
-  },
-  {
-    path: 'auth',
-    loadChildren: () => import('projects/master-app/src/app/components/auth/auth.module').then(m => m.AuthModule)
+    component: AppComponent,
+    children: [
+      // {
+      //   path: '',
+      //   loadChildren: () => import('../app/layouts/layout-client/layout-client.module').then(m => m.LayoutClientModule)
+      // },
+      {
+        path: '',
+        loadChildren: () => import('../app/layouts/layout-admin/layout-admin.module').then(m => m.LayoutAdminModule)
+      },
+      {
+        path: 'admin',
+        loadChildren: () => import('../app/layouts/layout-admin/layout-admin.module').then(m => m.LayoutAdminModule)
+      },
+      {
+        path: 'auth',
+        loadChildren: () => import('projects/master-app/src/app/components/auth/auth.module').then(m => m.AuthModule)
+      }
+    ]
   }
 ];
 

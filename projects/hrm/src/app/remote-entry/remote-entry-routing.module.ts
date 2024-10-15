@@ -7,7 +7,7 @@ export const remoteRoutes: Routes = [
     path: '',
     children: [
       {
-        path: 'test',
+        path: '',
         loadChildren: () =>
           import('../components/permission/permission.module').then((m) => m.PermissionModule),
       },

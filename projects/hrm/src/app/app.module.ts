@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
     AppComponent
   ],
   imports: [
-    CommonModule,
+    BrowserModule,
     RemoteEntryModule
   ],
   providers: [],

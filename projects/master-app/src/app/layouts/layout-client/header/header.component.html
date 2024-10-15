@@ -1,0 +1,45 @@
+<div class="header">
+  <div class="header-upper">
+    <div class="header-selectors-wrapper">
+      <div class="currency-selector"><select id="customerCurrency" name="customerCurrency"
+          onchange="setLocation(this.value)" aria-label="Bộ chọn tiền tệ">
+          <option selected="" value="https://localhost:44369/changecurrency/12?returnUrl=%2F">Vietnamese Dong</option>
+          <option value="https://localhost:44369/changecurrency/1?returnUrl=%2F">US Dollar</option>
+        </select></div>
+      <div class="language-selector"><select id="customerlanguage" name="customerlanguage"
+          onchange="setLocation(this.value)" aria-label="Lựa chọn ngôn ngữ">
+          <option selected="" value="https://localhost:44369/changelanguage/2?returnUrl=%2F">VI</option>
+          <option value="https://localhost:44369/changelanguage/1?returnUrl=%2F">EN</option>
+        </select></div>
+    </div>
+    <div class="header-links-wrapper">
+      <div class="header-links">
+        <ul>
+          <li><a [routerLink]="['/register?returnUrl=%2F']" class="ico-register">Ghi danh</a></li>
+          <li><a [routerLink]="['/login?returnUrl=%2F']" class="ico-login">Đăng nhập</a></li>
+          <li><a [routerLink]="['/wishlist']" class="ico-wishlist"> <span class="wishlist-label">Danh sách yêu thích</span> <span
+                class="wishlist-qty">(0)</span> </a></li>
+          <li id="topcartlink"><a [routerLink]="['/cart']" class="ico-cart"> <span class="cart-label">Giỏ hàng</span> <span
+                class="cart-qty">(0)</span> </a></li>
+        </ul>
+      </div>
+      <div id="flyout-cart" class="flyout-cart">
+        <div class="mini-shopping-cart">
+          <div class="count">Bạn không có sản phẩm nào trong giỏ hàng của bạn.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-lower">
+    <div class="header-logo"><a [routerLink]="['/']"> <img alt="Your store name"
+          src="assets/images/logo.png"> </a></div>
+    <div class="search-box store-search-box">
+      <form method="get" id="small-search-box-form" action="/search"><input type="text"
+          class="search-box-text ui-autocomplete-input" id="small-searchterms" autocomplete="off" name="q"
+          placeholder="Tìm kiếm cửa hàng" aria-label="Tìm kiếm cửa hàng"> <button type="submit"
+          class="button-1 search-box-button">Tìm kiếm</button></form>
+      <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+        unselectable="on" style="display: none;"></ul>
+    </div>
+  </div>
+</div>

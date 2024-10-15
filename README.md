@@ -14,7 +14,9 @@
 
 ## environment.ts
 - chỉ định tài nguyên (1) (2) sẽ được load dựa vào MÔI TRƯỜNG.   
-
+- 7300: hrm
+- 7400: media
+- 7500: client
 
 # Hướng dẫn chung
 ## Tạo mới 1 application 

@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'client',
 
   exposes: {
-    './Component': './projects/client/src/app/app.component.ts',
+    './Module': './projects/client/src/app/remote-entry/remote-entry.module.ts',
   },
 
   shared: {

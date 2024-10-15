@@ -12,7 +12,7 @@
 			},
 			"root": "projects/master-app",
 			"sourceRoot": "projects/master-app/src",
-			"prefix": "app",
+			"prefix": "nop",
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",
@@ -30,9 +30,7 @@
 							"projects/master-app/src/assets"
 						],
 						"styles": [
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
-							"projects/master-app/src/styles.scss"
+							"src/styles.scss"
 						],
 						"scripts": [],
 						"extraWebpackConfig": "projects/master-app/webpack.config.js",
@@ -374,7 +372,7 @@
 			},
 			"root": "projects/client",
 			"sourceRoot": "projects/client/src",
-			"prefix": "app",
+			"prefix": "client",
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",

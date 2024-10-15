@@ -7,7 +7,7 @@ export const remoteRoutes: Routes = [
     path: '',
     children: [
       {
-        path: 'test',
+        path: '',
         loadChildren: () =>
           import('../components/test/test.module').then((m) => m.TestModule),
       },
